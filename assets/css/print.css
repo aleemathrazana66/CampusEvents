@@ -1,0 +1,83 @@
+/* ============================================================
+   CampusEvents - Print Stylesheet
+   Optimized for Certificate & Admin Reports
+   ============================================================ */
+
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 12pt;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar,
+  .footer,
+  .dashboard-sidebar,
+  .dashboard-topbar,
+  .btn,
+  .toast-container,
+  .no-print,
+  .action-buttons,
+  .sidebar-toggle-btn {
+    display: none !important;
+  }
+
+  .dashboard-main {
+    margin-left: 0 !important;
+    padding: 0 !important;
+  }
+
+  .dashboard-content {
+    padding: 0 !important;
+  }
+
+  .certificate-preview-card {
+    border: 6px double #000000 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 2.5cm 1.5cm !important;
+    page-break-inside: avoid;
+  }
+
+  .cert-college {
+    color: #000000 !important;
+    font-size: 20pt !important;
+  }
+
+  .cert-title {
+    color: #333333 !important;
+    font-size: 22pt !important;
+  }
+
+  .cert-recipient {
+    color: #000000 !important;
+    font-size: 26pt !important;
+    border-bottom: 2px solid #000000 !important;
+  }
+
+  .data-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+
+  .data-table th, 
+  .data-table td {
+    border: 1px solid #cccccc !important;
+    padding: 8px !important;
+  }
+
+  .dash-card {
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  @page {
+    margin: 1cm;
+    size: auto;
+  }
+}
